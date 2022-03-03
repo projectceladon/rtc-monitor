@@ -1,0 +1,9 @@
+This program acts as an QMP client that communicates with QEMU to sync guest
+RTC settings to host. For simplicity, the handshake phase is omitted, user
+should establish the channel first and then pass the QMP pipes to the QMP
+client.
+
+Requirements:
+- must run with root privilege, or it will fail to create host RTC alarms.
+- there shouldn't be any other program that also manipulates host time or RTC.
+- before compiling the code, run "apt install libjson-c-dev" to install libjson
