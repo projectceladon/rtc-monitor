@@ -7,3 +7,5 @@ Requirements:
 - must run with root privilege, or it will fail to create host RTC alarms.
 - there shouldn't be any other program that also manipulates host time or RTC.
 - before compiling the code, run "apt install libjson-c-dev" to install libjson
+
+
